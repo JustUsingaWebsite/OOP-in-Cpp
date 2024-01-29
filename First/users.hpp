@@ -19,6 +19,7 @@ class User{
     tuple<int, string> getuser(int);
     User* adduser(int);
     User* removeuser(int);
+    bool validate_user(int);
 
 };
 
