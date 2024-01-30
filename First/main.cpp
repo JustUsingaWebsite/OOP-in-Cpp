@@ -2,13 +2,18 @@
 using namespace std;
 
 enum roles{
-    admin = 1,
-    clerk = 2,
-    customer = 3
+    _admin = 1,
+    _clerk = 2,
+    _customer = 3
+};
+
+enum description {
+    _virtual = 1,
+    _physical = 2
 };
 
 int main(){
     cout << roles::customer << endl;
-    
+
     return 0;
 }
