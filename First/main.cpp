@@ -13,7 +13,7 @@ enum description {
 };
 
 int main(){
-    cout << roles::customer << endl;
+    cout << roles::_customer << endl;
 
     return 0;
 }
