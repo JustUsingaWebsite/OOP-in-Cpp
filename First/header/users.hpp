@@ -10,16 +10,20 @@
 #include <iostream>
 using namespace std;
 
+
+
 class User{
     protected:
     int userId;
     string pass;
+    int role; // roles go from 1 being high pritoriy to lower
 
     public:
-    tuple<int, string> getuser(int);
+    tuple<int, string> getuserinfo(int);
     User* adduser(int);
     User* removeuser(int);
     bool validate_user(int);
+
 
 };
 
