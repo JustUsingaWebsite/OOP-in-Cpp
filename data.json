@@ -1,0 +1,32 @@
+{
+    "userdata":{
+        "userid":{"password":"", "role":"rolekey"}
+    },
+
+    "role":["admin","clerk","customer"],
+    "reservation_status":["active", "canceled", "completed"],
+
+    "custimer":{
+        "userid":{"fname":"", "lname":"", "age":1, "email":""}
+    },
+
+    "inventory":{
+        "userid":{"gameid":[], "moiveid":[]}
+    },
+
+    "game":{
+        "gameid":{"game_name":"", "rating":"", "price":1, "copies":1, "description":""}
+    },
+
+    "account":{
+        "userid":{
+            "accountid":{
+                "gameid":[], "day_rented":"", "rent_duration":0, "day_returned":"", "paid":0, "balance":0, "interest":0.0
+            }
+        }
+    },
+
+    "reservation":{
+        "reservationid":{"userid":0, "date":"", "reservation_length":0, "status":""}
+    }
+}

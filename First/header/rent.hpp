@@ -7,9 +7,8 @@
 
 #ifndef RENT_HPP_
 #define RENT_HPP_
-#include <iostream>
+#include "include_header.hpp"
 
-using namespace std;
 
 class Rent{
 
