@@ -24,7 +24,7 @@ public:
 
     // Member functions:
     void setGameName(const std::string& newGameName);
-    std::string getGameName() const;
+    string getGameName() const;
     // ... similarly for other fields
 };
 
