@@ -11,7 +11,7 @@
 
 class Account {
 public:
-    vector<int> gameid;
+    int gameid;
     string dayRented;
     int rentDuration;
     string dayReturned;
@@ -20,9 +20,9 @@ public:
     double interest;
 
     // Member functions:
-    void rentGame(int gameId);
-    void returnGame(int gameId);
-    void makePayment(double amount);
+    void rentGame(int);
+    void returnGame(int);
+    void makePayment(double);
     // ... other account-related functions
 };
 

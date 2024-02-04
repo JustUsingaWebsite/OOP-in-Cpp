@@ -1,12 +1,12 @@
 {
     "userdata":{
-        "userid":{"password":"", "role":"rolekey"}
+        "userid":{"password":"", "role":"admin", "removed":false}
     },
 
     "role":["admin","clerk","customer"],
     "reservation_status":["active", "canceled", "completed"],
 
-    "custimer":{
+    "customer":{
         "userid":{"fname":"", "lname":"", "age":1, "email":""}
     },
 
@@ -19,8 +19,8 @@
     },
 
     "account":{
-        "userid":{
-            "accountid":{
+        "accountid":{
+            "userid":{
                 "gameid":[], "day_rented":"", "rent_duration":0, "day_returned":"", "paid":0, "balance":0, "interest":0.0
             }
         }

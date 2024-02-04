@@ -9,6 +9,7 @@
 #define INCLUDE_HEADER_HPP_
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 string getStringFromEnum(int e)

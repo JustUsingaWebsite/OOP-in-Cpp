@@ -15,8 +15,8 @@ public:
     vector<int> movieid;
 
     // Member functions:
-    void addGame(int gameId);
-    void removeGame(int gameId);
+    void addGame(int id);
+    void removeGame(int id);
     // ... similarly for movies
 };
 

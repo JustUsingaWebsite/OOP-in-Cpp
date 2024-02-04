@@ -17,20 +17,21 @@ enum  roles {
 
 
 class User{
-    protected:
+    public:
     int userId;
     string pass;
     int role = roles::_customer; // roles go from 1 being high pritoriy to lower
+    bool removed;
 
-    public:
-    tuple<int, string> getuserinfo(int);
+    
+    
     User* adduser(int);
     User* removeuser(int);
     bool validate_user(int);
 
-    void setPassword(const std::string& newPassword); // Sets the password
+    void setPassword(const std::string&); // Sets the password
     std::string getPassword() const;                 // Gets the password
-    void setRole(const std::string& newRole);        // Sets the role
+    void setRole(roles e);        // Sets the role
     std::string getRole() const;
 
 };
@@ -42,7 +43,8 @@ class Customer: public User{
     int age;
 
     public:
-    void update_name(string = "", string = "");
+    bool update_name(string, string);
+    tuple<int, string, bool> getuserinfo(int);
 };
 
 #endif /* !USERS_HPP_ */

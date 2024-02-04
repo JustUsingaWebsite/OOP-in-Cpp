@@ -16,6 +16,7 @@ enum description {
 
 class Game {
 public:
+    int gameid;
     string gameName;
     string rating;
     double price;
@@ -23,8 +24,8 @@ public:
     int description;
 
     // Member functions:
-    void setGameName(const std::string& newGameName);
-    string getGameName() const;
+    void setGameName(const string&, int);
+    string getGameName(int) const;
     // ... similarly for other fields
 };
 
